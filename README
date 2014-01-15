@@ -1,24 +1,28 @@
-﻿********
-TimeSheet 專案部分 Code
-********
+﻿TimeSheet 專案部分 Code
 
-只抓一些我覺得比較有代表性的檔案
+
+只抓一些我覺得比較有代表性的檔案以及是我寫的功能。
 
 
 隨便的檔案說明
-============
+==============
 
 1.
 html沒有丟進來，因為沒什麼東西，就只是建了一個knockout template的table以供使用
-
 其他功能面或雜七雜八都在 TimeSheet.js 裡面
 
 2.
 ajax把json或request丟給ashx，這裡也只挑了一個SaveSheetHandler.ashx，裡面會呼叫
-
 SaveTimeSheetData裡面的方法拿到東西
 
 3.
 GetTimeSheetSelect會拿到三個dropdownlist的資料，然後丟給javascript吃。這部分花
-
 了點時間研究。
+
+4.
+WinForm部分作的是報表，大概概念就是用ReportViewer上面蓋UserControl。不過當初不
+是用VisualStudio提供的UserControl類別來寫，是自己幹乾淨class為UserControl，只能
+說動工太早還沒上到UserControl的課。
+
+FilterPanel程式碼非常凌亂，rewrite兩次，盡量加入大量註解了，也是部分檔案。
+UI長像大概就是那張jpg，右上角那個搜尋就是學vs的搜尋再貼在ReportViewer上面。
